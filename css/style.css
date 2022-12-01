@@ -1,0 +1,1098 @@
+/* masterstake.net CSS
+-------------------------------------------------- */
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-display: auto;
+    font-style: fallback;
+    font-weight: 300;
+    src: url('../fonts/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/roboto-v18-latin-300d41d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto-v18-latin-300.html') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto-v18-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-display: auto;
+    font-style: fallback;
+    font-weight: 400;
+    src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto-v18-latin-regulard41d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/roboto-v18-latin-regular.html') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 150px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+body > .container {
+    padding: 60px 15px 60px;
+}
+
+body .body-404 {
+    background-color: #fed136;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 150px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-top: 1px dashed #4d5d66;
+}
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer .list-group-item {
+    border: 0;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: -0;
+    background-color: #ffffff;
+}
+
+.footer .fab {
+    padding-top: 10px;
+}
+
+.footer-links {
+    padding-top: 10px;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #fed136;
+}
+
+::selection {
+    color: #fff;
+    background: #fed136;
+}
+
+/* Navbar 
+-------------------------------------------------- */
+.navbar-custom {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #4d5d66;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-top: -5px;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #fed136;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    background-color: #fed136;
+    border-color: #fed136;
+    border: none;
+    outline: none;
+}
+
+/* 404 pages
+-------------------------------------------------- */
+.intro-404 {
+    text-align: center;
+    background-color: #fed136;
+    height: 100vh;
+}
+
+.intro-404-text h1 {
+    font-size: 8.000em;
+}
+
+.intro-404-text h2 {
+    font-size: 20px;
+}
+
+.intro-404-text {
+    position: relative;
+    top: -25%;
+}
+
+.btn-wb-404-getstarted {
+    padding: .5rem 1rem;
+    padding: .25rem .5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #fea136;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.btn-wb-404-getstarted:hover,
+.btn-wb-404-getstarted:focus,
+.btn-wb-404-getstarted:active,
+.btn-wb-404-getstarted.active,
+.open .dropdown-toggle.btn-wb-404-getstarted {
+    color: #fff;
+    background-color: #fea136;
+}
+
+.btn-wb-404-learning-center {
+    padding: .5rem 1rem;
+    padding: .25rem .5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #fe6f36;
+    margin-top: 15px;
+}
+
+.btn-wb-404-learning-center:hover,
+.btn-wb-404-learning-center:focus,
+.btn-wb-404-learning-center:active,
+.btn-wb-404-learning-center.active,
+.open .dropdown-toggle.btn-wb-404-learning-center {
+    color: #fff;
+    background-color: #fe6f36;
+}
+
+/* Buttons Navbar 
+-------------------------------------------------- */
+.btn-wb-freeblockchain {
+    text-transform: uppercase;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-wb-freeblockchain:hover,
+.btn-wb-freeblockchain:focus,
+.btn-wb-freeblockchain:active,
+.btn-wb-freeblockchain.active,
+.open .dropdown-toggle.btn-wb-freeblockchain {
+    color: #fff;
+    background-color: #fed136;
+}
+
+@media (max-width: 62em) {
+    .btn-wb-freeblockchain {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Intro (Frontpage)
+-------------------------------------------------- */
+.btn-wb-getstarted {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #5a6268;
+    margin-right: 15px;
+}
+
+.btn-wb-getstarted:hover,
+.btn-wb-getstarted:focus,
+.btn-wb-getstarted:active,
+.btn-wb-getstarted.active,
+.open .dropdown-toggle.btn-wb-getstarted {
+    color: #fff;
+    background-color: #5a6268;
+}
+
+@media (max-width: 62em) {
+    .btn-wb-getstarted {
+        margin-bottom: 15px;
+    }
+}
+
+.btn-wb-learnmore {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #5a6268;
+}
+
+.btn-wb-learnmore:hover,
+.btn-wb-learnmore:focus,
+.btn-wb-learnmore:active,
+.btn-wb-learnmore.active,
+.open .dropdown-toggle.btn-wb-learnmore {
+    color: #fff;
+    background-color: #5a6268;
+}
+
+@media (max-width: 62em) {
+    .btn-wb-learnmore {
+        margin-bottom: 15px;
+    }
+}
+
+.intro {
+    text-align: center;
+    background-color: #fed136;
+    height: 95vh;
+}
+
+.intro-text h1 {
+    font-size: 50px;
+}
+
+.intro-text p {
+    font-size: 20px;
+}
+
+.intro-text {
+    position: relative;
+    top: -15%;
+}
+
+/* Products (Frontpage)
+-------------------------------------------------- */
+
+@media (min-width: 62em) {
+    .product-divider {
+        margin: 3rem 15px;
+        border-top: 1px solid #fed136;
+    }
+}
+
+@media (max-width: 62em) {
+    .product-divider {
+        margin: 0;
+        border: 0;
+    }
+}
+
+.products .col-lg-4 {
+    margin-bottom: 1.5rem;
+}
+.products h2 {
+    font-weight: 300;
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+.products h3 {
+    font-weight: 300;
+    margin-right: .75rem;
+    margin-left: .75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.products p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.products .list-group-item {
+    border: 0;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.products .fa-gift {
+    font-size: 13px;
+    color: #fed136;
+    padding-right: 5px;
+}
+
+
+/* Pricing (Frontpage)
+-------------------------------------------------- */
+
+.btn-wb-pricing {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #5a6268;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.btn-wb-pricing:hover,
+.btn-wb-pricing:focus,
+.btn-wb-pricing:active,
+.btn-wb-pricing.active,
+.open .dropdown-toggle.btn-wb-pricing {
+    color: #fff;
+    background-color: #5a6268;
+}
+
+.card {
+    border: 1px solid #fed136;
+}
+
+.card p {
+    margin-top: 15px;
+    text-align: left;
+}
+.card-header {
+    color: #fff;
+    background-color: #fed136;
+    border-bottom: 1px solid #fed136;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+}
+
+/* Frontpage stuff
+------------------------- */
+
+.frontpage-divider {
+    margin: 5rem 0;
+}
+
+.frontpage-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.row-algorithms {
+    margin-top: 40px;
+}
+
+.wb-fa-whatwedo, .wb-fa-products {
+    color: #fed136;
+}
+.row-what-we-do, .row-products, .row-pricing, .row-coin-wizard {
+    margin: 5rem 0;
+}
+
+@media (min-width: 20em) {
+    .row-what-we-do .frontpage-heading, .row-products .frontpage-heading, .row-pricing .frontpage-heading, .row-coin-wizard .frontpage-heading {
+        margin-top: 3rem;
+    }
+    .frontpage-heading {
+        font-size: 50px;
+    }
+    .wb-fa-whatwedo, .wb-fa-products {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 62em) {
+    .row-what-we-do .frontpage-heading, .row-products .frontpage-heading, .row-pricing .frontpage-heading, .row-coin-wizard .frontpage-heading {
+        margin-top: 0;
+    }
+    .wb-fa-whatwedo, .wb-fa-products {
+        margin-top: 0;
+    }
+}
+
+/* Coin wizard (Frontpage)
+-------------------------------------------------- */
+
+.btn-wb-hidden {
+    display: none;
+}
+
+.js-step {
+    display: none;
+}
+.js-step-active {
+    display: block;
+}
+
+.nav-pills {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+@media (max-width: 62em) {
+    .nav-pills {
+        flex-direction: column !important;
+    }
+}
+
+.nav-pills li {
+    color: #fff;
+    background-color: #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #4d5d66;
+}
+
+.nav-pills li h4 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.text-default {
+    color: #4d5d66;
+}
+
+.file-size {
+    width: 160px;
+    height: 150px;
+    max-width: 200px;
+    max-height: 150px;
+
+}
+
+.btn-wb-wizard {
+    padding: 15px 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fed136;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.btn-wb-wizard:hover,
+.btn-wb-wizard:focus,
+.btn-wb-wizard:active,
+.btn-wb-wizard.active,
+.open .dropdown-toggle.btn-wb-wizard {
+    color: #fff;
+    background-color: #fed136;
+}
+
+#prevButton {
+    vertical-align: bottom;
+    float:right;
+}
+
+#nextButton {
+    vertical-align: bottom;
+    float:right;
+}
+
+.btn-wb-upload-change {
+    padding: 15px 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fed136;
+    margin-bottom: 10px;
+}
+
+.btn-wb-upload-change:hover,
+.btn-wb-upload-change:focus,
+.btn-wb-upload-change:active,
+.btn-wb-upload-change.active,
+.open .dropdown-toggle.btn-wb-upload-change {
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-wb-upload-remove {
+    padding: 15px 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Coin wizard status codes (Frontpage)
+-------------------------------------------------- */
+
+.wb-status {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.wb-status .col-md-2 {
+    max-width: 125px;
+}
+
+.wb-status .col-md-2 .fa {
+    color: #fed136;
+}
+
+.wb-status .col-md-10 .fab {
+    color: #fed136;
+}
+
+.wb-status .col-md-10 h3 {
+    font-size: 18px;
+}
+
+.wb-status .col-md-10 .fa-twitter {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/* Footer (Global)
+-------------------------------------------------- */
+
+footer {
+    min-height: 203px;
+}
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    padding-right: 5px;
+}
+.social {
+    color: #4d5d66;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    padding-right: 5px;
+}
+
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-yt:hover {
+    color: #d34836;
+}
+#social-dc:hover {
+    color: #7289d9;
+}
+
+/* Intro (Leaning Center)
+-------------------------------------------------- */
+
+.intro-learning_center, .intro-mycoin, .intro-privacy {
+    padding: 2rem 1rem;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    background-color: #fed136;
+}
+
+.intro-text-learning_center h1, .intro-mycoin h1, .intro-privacy h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.intro-text-learning_center p, .intro-mycoin p, .intro-privacy p {
+    font-size: 20px;
+}
+
+.intro-text-learning_center {
+    position: relative;
+    top: -15%;
+}
+
+.learning_center, .mycoin, .mycoin-login, .privacy {
+    position:relative;
+    top: -60px;
+}
+
+.breadcrumb-learning-center-header {
+    background-color: #fed136;
+}
+
+.breadcrumb-learning-center .fa-home {
+    color: #fff;
+}
+
+.learning_center .list-group-item, .learning_center_topic .list-group-item, .learning_center_article .list-group-item {
+    border: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -0;
+    background-color: #ffffff;
+}
+
+.learning_center_topic .badge-wb {
+    background-color: #4d5d66;
+    color: #fff;
+    position: relative;
+    bottom: 4px;
+}
+
+.learning_center_topic .list-group-item .fa-file {
+    padding-right: 5px;
+    color: #4d5d66;
+}
+
+.learning_center .learning_center_title-link {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.learning_center_article h1, .learning_center_topic h1 {
+    border-bottom: 1px solid #fed136;
+}
+
+.learning_center_article_body {
+    padding-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.learning_center_topic .card {
+    border:0px;
+    padding: 0;
+}
+
+.learning_center_topic .card-body {
+    padding-left: 0px;
+}
+
+.breadcrumb-learning-center {
+    background-color: #fed136;
+    border-radius: 0;
+    padding: .75rem 0;
+}
+
+.learning_center .card {
+    border:0px;
+    padding-left: 0px;
+}
+
+.learning_center .card .card-text{
+    text-align: center;
+}
+
+.learning_center .card-header {
+    background-color: transparent;
+    border:0px;
+    color: #4d5d66;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.learning_center .col-sm {
+    max-width: 380px;
+}
+
+.learning_center .card-body {
+    padding-left: 0px;
+}
+
+.learning_center .card-title {
+    padding-left: 0px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.breadcrumb-learning-center .breadcrumb-item a, .breadcrumb-learning-center .breadcrumb-item a:hover {
+    color: #fff;
+}
+
+.breadcrumb-learning-center .breadcrumb-item.active {
+    color: #4d5d66;
+}
+
+.code-example {
+    color: #ccc;
+}
+
+#show_legacy_documentation {
+    margin-bottom: 5px;
+}
+
+.row-learningcenter-search {
+    padding-bottom: 40px;
+}
+
+.row-learningcenter-search h2 {
+    color: #212529;
+}
+
+/* Share icons (Learning Center)
+-------------------------------------------------- */
+
+.share-header {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.share:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    padding-right: 10px;
+    margin-bottom: 60px;
+}
+.share {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    padding-right: 10px;
+    margin-bottom: 60px;
+}
+
+.share-tw {
+    color: #ccc;
+}
+.share-fb {
+    color: #ccc;
+}
+.share-tw:hover {
+    color: #4099FF;
+}
+.share-fb:hover {
+    color: #3B5998;
+}
+
+/* 404 (Learning Center)
+-------------------------------------------------- */
+.intro-404-learning-center {
+    text-align: center;
+    background-color: #fed136;
+    height: 100vh;
+    position: relative;
+    top: -25px;
+}
+
+.intro-404-learning-center-text h1 {
+    font-size: 8.000em;
+}
+
+.intro-404-learning-center-text h2 {
+    font-size: 20px;
+}
+
+.intro-404-learning-center-text {
+    position: relative;
+    top: -25%;
+}
+
+/* Alert (MyCoin)
+-------------------------------------------------- */
+.wb-alert {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Buttons (MyCoin)
+-------------------------------------------------- */
+.btn-wb-mycoin {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #fed136;
+    margin-top: 5px;
+}
+
+.btn-wb-mycoin:hover,
+.btn-wb-mycoin:focus,
+.btn-wb-mycoin:active,
+.btn-wb-mycoin.active,
+.open .dropdown-toggle.btn-wb-mycoin {
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-wb-mycoin-node, .btn-wb-mycoin-download {
+    margin-right: 5px;
+}
+
+.btn-wb-upgrade {
+    padding: 15px 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fed136;
+    margin-bottom: 10px;
+}
+
+.btn-wb-upgrade:hover,
+.btn-wb-upgrade:focus,
+.btn-wb-upgrade:active,
+.btn-wb-upgrade.active,
+.open .dropdown-toggle.btn-wb-upgrade {
+    color: #fff;
+    background-color: #fed136;
+}
+
+/* (MyCoin)
+-------------------------------------------------- */
+.mycoin .content {
+    max-width: 800px;
+    word-wrap: break-word;
+}
+
+/* Services (MyCoin)
+-------------------------------------------------- */
+.header-services {
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row-services {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 15px;
+}
+.row-services .fa-4x {
+    color: #4d5d66;
+}
+.row-services .col-md-1 {
+    padding-left: 0;
+    margin-right: 25px;
+}
+.row-services .col-md-8 {
+    padding-left: 0;
+}
+.row-services .col-md-7 {
+    padding-left: 0;
+}
+.row-services .col-md-6 {
+    padding-left: 0;
+}
+.row-services .col-md-4 {
+    padding-left: 0;
+}
+.row-services .col-md-3 {
+    padding-left: 0;
+}
+.row-services .col-md-2 {
+    padding-left: 0;
+}
+
+/* Getting started/Staking instructions (MyCoin)
+-------------------------------------------------- */
+.p-wb {
+    padding-bottom: 10px;
+}
+
+/* Nav (MyCoin)
+-------------------------------------------------- */
+.list-group-mycoin {
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 15px;
+}
+.list-group-mycoin .list-group-item {
+    border: 0;
+    border-radius: 0;
+}
+.list-group-mycoin .list-group-item:hover {
+    border: 0;
+    border-radius: 0;
+    border-right: 4px solid #fed136;
+    cursor: pointer;
+}
+.list-group-mycoin .list-group-item.active {
+    border: 0;
+    border-radius: 0;
+    background-color: #fed136;
+    border-right: 4px solid #fed136;
+}
+
+/* Node check (MyCoin)
+-------------------------------------------------- */
+.table-mycoin .fa-check-circle {
+    color: #fed136;
+    padding-left: 5px;
+}
+.table-mycoin .fa-times-circle {
+    color: #4d5d66;
+    padding-left: 5px;
+}
+
+/* Buttons (MyCoin)
+-------------------------------------------------- */
+.btn-wb-default {
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-wb-default:hover,
+.btn-wb-default:focus,
+.btn-wb-default:active,
+.btn-wb-default.active,
+.open .dropdown-toggle.btn-wb-default {
+    color: #fff;
+    background-color: #fed136;
+}
+
+/* Masternode hosting (MyCoin)
+-------------------------------------------------- */
+.table td, .table th {
+    border: 0px;
+}
+.table-mycoin-masternode thead th {
+    border-bottom: 2px solid #fed136;
+}
+
+.table-mycoin-masternode th {
+    font-weight: 300;
+}
+
+.table-mycoin-masternode .flag {
+    padding-bottom: 4px;
+}
+
+.form-control-masternode-key {
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Node console (MyCoin)
+-------------------------------------------------- */
+
+.console_button {
+    padding-top: 8px;
+}
+
+@media (min-width: 62em) {
+    .console_button {
+        padding-left: 0px;
+    }
+}
+
+.typeahead {
+    background-color: #FFFFFF;
+}
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999999;
+}
+.tt-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+.tt-suggestion {
+    font-size: 14px;
+    padding: 3px 20px;
+}
+.tt-suggestion:hover {
+    cursor: pointer;
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+
+.twitter-typeahead{
+    display: flex !important;
+}
+
+/* Version tags (Leaning Center)
+-------------------------------------------------- */
+
+.version_tag_all {
+    color: #212529;
+    background-color: #f2a900;
+}
+
+.version_tag_v08 {
+    color: #fff;
+    background-color: #ff0000;
+}
+
+.version_tag_sha256 {
+    color: #fff;
+    background-color: #f7931a;
+}
+
+.version_tag_quark {
+    color: #212529;
+    background-color: #00ff40;
+}
+
+.version_tag_scrypt {
+    color: #212529;
+    background-color: #d3d3d3;
+}
+
+.version_tag_x11 {
+    color: #fff;
+    background-color: #3e667f;
+}
+
+.version_tag_scryptpos {
+    color: #fff;
+    background-color: #000000;
+}
